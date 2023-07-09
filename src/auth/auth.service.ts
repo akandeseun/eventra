@@ -23,7 +23,7 @@ export class AuthService {
     const user = new User()
     user.username = username
     user.email = email
-    user.password = password
+    user.password = await this.userRepository.hashPassword(password)
 
     await user.save()
     delete user.password
