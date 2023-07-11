@@ -8,8 +8,7 @@ import {
 } from "typeorm"
 
 @Entity()
-@Unique(["username"])
-@Unique(["email"])
+@Unique(["username", "email"])
 export class User extends BaseEntity {
   @PrimaryGeneratedColumn("uuid")
   id: string

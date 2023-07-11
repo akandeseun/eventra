@@ -6,7 +6,7 @@ export const typeOrmConfig: TypeOrmModuleOptions = {
   port: 5432,
   username: "postgres",
   password: "akandeseun44",
-  database: "eventra-db",
+  database: "eventra",
   autoLoadEntities: true,
   synchronize: true,
 }
